@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: black;
+}
+
+canvas {
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+
+#color {
+  color: #bbb;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 1.2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out;
+}
+@keyframes octocat-wave {
+  0%,
+  100% {
+    transform: rotate(0);
+  }
+  20%,
+  60% {
+    transform: rotate(-25deg);
+  }
+  40%,
+  80% {
+    transform: rotate(10deg);
+  }
+}
+@media (max-width: 500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+  .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out;
+  }
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 15px;
+  background: rgba(255, 255, 255);
+  border-radius: 5px;
+  z-index: 100;
+}
+
+.control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.6em;
+  gap: 25px;
+}
